@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  a {
+    font-size: 14px;
+    font-weight: 900;
+    color: #fe5f1e;
+    background-color: inherit;
+    border: 2px solid #fe5f1e;
+    border-radius: 100%;
+    padding: 8px 14px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fb8358;
+      color: #fff;
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        color: #fff;
+        background-color: #fe5f1e;
+      }
+    }
+
+    .previous,
+    .next {
+      a {
+        padding: 4px 7px;
+      }
+    }
+
+    .previous {
+      transform: rotate(180deg);
+    }
+  }
+}
