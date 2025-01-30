@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import filter from './slices/filter/slice';
-import cart from './slices/cart/slice';
-import product from './slices/product/slice';
-import popap from './slices/popup/slice';
 import { useDispatch } from 'react-redux';
+import cart from './slices/cart.slice';
+import filter from './slices/filter.slice';
+import popup from './slices/popup.slice';
+import product from './slices/product.slice';
 
 export const store = configureStore({
-  reducer: { filter, cart, product, popap },
+	reducer: { filter, cart, product, popup },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

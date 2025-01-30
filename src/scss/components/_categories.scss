@@ -1,45 +1,51 @@
 @import './../variables';
 
 .categories {
-  @media (max-width: 990px) {
-    max-width: 810px;
-    width: 100%;
-  }
+	@media (max-width: 990px) {
+		max-width: 810px;
+		width: 100%;
+	}
 
-  ul {
-    display: flex;
+	ul {
+		display: flex;
 
-    @media (max-width: 990px) {
-      padding-bottom: 15px;
-      overflow-x: scroll;
+		@media (max-width: 990px) {
+			padding-bottom: 15px;
+			overflow-x: scroll;
 
-      ::-webkit-scrollbar-button {
-        width: 4px;
-      }
-    }
+			&::-webkit-scrollbar {
+				width: 0;
+				background: transparent;
+				display: none;
+			}
 
-    li {
-      font-weight: bold;
-      border-radius: 30px;
-      background-color: #f9f9f9;
-      padding: 13px 30px;
-      margin-right: 10px;
-      transition: background-color 0.1s ease-in-out;
-      cursor: pointer;
-      @include noselect();
+			&::-webkit-scrollbar-thumb {
+				background: transparent;
+			}
+		}
 
-      &:hover {
-        background-color: darken(#f9f9f9, 2%);
-      }
+		li {
+			font-weight: bold;
+			border-radius: 30px;
+			background-color: #f9f9f9;
+			padding: 13px 30px;
+			margin-right: 10px;
+			transition: background-color 0.1s ease-in-out;
+			cursor: pointer;
+			@include noselect();
 
-      &:active {
-        background-color: darken(#f9f9f9, 5%);
-      }
+			&:hover {
+				background-color: darken(#f9f9f9, 2%);
+			}
 
-      &.active {
-        background-color: #282828;
-        color: #fff;
-      }
-    }
-  }
+			&:active {
+				background-color: darken(#f9f9f9, 5%);
+			}
+
+			&.active {
+				background-color: #282828;
+				color: #fff;
+			}
+		}
+	}
 }

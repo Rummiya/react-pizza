@@ -1,5 +1,5 @@
-import { CartItemState } from '../redux/slices/cart/types';
+import { CartItemState } from '../redux/types';
 
 export const calcTotalCount = (items: CartItemState[]) => {
-  return items.reduce((sum, item) => sum + item.count, 0);
+	return items.reduce((sum, item) => sum + item.count, 0);
 };

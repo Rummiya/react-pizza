@@ -1,35 +1,37 @@
 @import './../variables';
 
 .header {
-  border-bottom: 1px solid $gray-line;
-  padding: 40px 0;
+	border-bottom: 1px solid $gray-line;
+	padding: 40px 0;
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-  }
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+	}
 
-  &__logo {
-    display: flex;
+	&__logo {
+		display: flex;
+		align-items: start;
+		width: 250px;
 
-    img {
-      margin-right: 15px;
-      transform: rotate(180deg);
-    }
+		img {
+			margin-right: 15px;
+			transform: rotate(180deg);
+		}
 
-    h1 {
-      color: #181818;
-      font-size: 24px;
-      letter-spacing: 1%;
-      text-transform: uppercase;
-      font-weight: 800;
-      text-align: left;
-    }
+		h1 {
+			color: #181818;
+			font-size: 24px;
+			letter-spacing: 1%;
+			text-transform: uppercase;
+			font-weight: 800;
+			text-align: left;
+		}
 
-    p {
-      color: #7b7b7b;
-    }
-  }
+		p {
+			color: #7b7b7b;
+		}
+	}
 }
