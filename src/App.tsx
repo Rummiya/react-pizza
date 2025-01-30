@@ -23,7 +23,7 @@ function App() {
 					<Route
 						path='cart'
 						element={
-							<Suspense fallback={<CartEmpty title='default' />}>
+							<Suspense fallback={<CartEmpty title='Корзина пуста' />}>
 								<Cart />
 							</Suspense>
 						}
@@ -31,7 +31,7 @@ function App() {
 					<Route
 						path='*'
 						element={
-							<Suspense fallback={<CartEmpty title='default' />}>
+							<Suspense fallback={<CartEmpty title='not found' />}>
 								<NotFound />
 							</Suspense>
 						}
