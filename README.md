@@ -27,8 +27,6 @@
 
 ### 2. Установка зависимостей
 - yarn install 
-- npm install
 
 ### 3. Запуск проекта
 - yarn dev
-- npm run dev
