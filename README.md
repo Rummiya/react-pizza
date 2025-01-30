@@ -22,13 +22,13 @@
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-git clone <URL_репозитория>
-cd <имя_папки_проекта>
+- git clone <URL_репозитория>
+- cd <имя_папки_проекта>
 
 ### 2. Установка зависимостей
-yarn install 
-npm install
+- yarn install 
+- npm install
 
 ### 3. Запуск проекта
-yarn dev
-npm run dev
+- yarn dev
+- npm run dev
