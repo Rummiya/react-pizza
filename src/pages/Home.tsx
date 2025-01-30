@@ -55,11 +55,14 @@ const Home: React.FC = () => {
 			dispatch(fetchProducts({ category, sortBy, sortOrder }));
 		};
 		getData();
-	}, [categoryId, sort.sortProperty, sortOrder]);
+	}, [categoryId, sort, sortOrder, dispatch]);
 
-	const changeCategoryId = React.useCallback((i: number) => {
-		dispatch(setCategoryId(i));
-	}, []);
+	const changeCategoryId = React.useCallback(
+		(i: number) => {
+			dispatch(setCategoryId(i));
+		},
+		[dispatch]
+	);
 
 	const renderCards = () => {
 		const filteredProduct = items.filter(item =>
