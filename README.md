@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Онлайн-платформа для заказа пиццы
+7 сент. 2024 г. – 25 сент. 2024 г.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **[Демо](https://react-pizza-green.vercel.app/)**
 
-## Available Scripts
+### 🛠 Стек технологий: **React, TypeScript, Redux Toolkit, React Router**
 
-In the project directory, you can run:
+Этот проект представляет собой современное веб-приложение для заказа пиццы, реализованное с использованием React и TypeScript. Основное внимание уделено удобству пользователей, плавной работе интерфейса и быстродействию. В проекте все строго типизировано. Оптимизирована перерисовка компонентов с помощью React memo и useCallback, также оптимизирована сборка JS-файлов при помощи React lazy
 
-### `yarn start`
+### - Функционал:
+- Каталог пицц, при выборе пиццы открывается модальное окно с возможностью выбора размера и типа теста.
+- Фильтрация по категориям (например, мясные, вегетарианские) и сортировка по цене, популярности и алфавиту.
+- Удобная поисковая система по названию пицц, найдет нужный вариант в независимости от регистра ввода.
+- Добавление в корзину, изменение количества с помощью удобного счетчика.
+- Сохранение корзины в localStorage, чтобы выбранные товары не терялись при перезагрузке страницы.
+- Динамический пересчет итоговой стоимости заказа.
+- Лоадеры для плавной загрузки данных и улучшенного пользовательского опыта.
+- Маршрутизация через React Router, позволяющая легко переключаться между страницами каталога и корзины.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Проект демонстрирует грамотное управление состоянием с помощью Redux Toolkit, оптимизированную работу с данными и удобный пользовательский интерфейс. Суммарно на разработку этого проекта ушло 19 дней без перерывов, +- по 3 часа в день, бывало, что работала по меньше часу в день из-за занятости.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
