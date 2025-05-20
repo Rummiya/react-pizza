@@ -1,4 +1,4 @@
-# React Pizza
+# 🍕 React Pizza
 7 сент. 2024 г. – 25 сент. 2024 г.
 
 ### 🛠 Стек технологий: **React, TypeScript, Redux Toolkit, React Router, MockApi**
